@@ -34,17 +34,12 @@ public class RandomUtils {
         int index = new Random().nextInt(months.size());
         return months.get(index);
     }
-
-
-
-
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
 
     @BeforeAll
     static void setUp() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.holdBrowserOpen = true;
-        //Configuration.pageLoadTimeout=150000;
         Configuration.browserSize = "1920x1080";
     }
 }

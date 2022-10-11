@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 
 public class RegistrationFormWithPageObjectsTests extends RandomUtils {
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
-
     @Test
     void fillFormTest() {
         registrationFormPage.openPage()
@@ -35,8 +34,4 @@ public class RegistrationFormWithPageObjectsTests extends RandomUtils {
                 .checkResult("Address", currentAddress)
                 .checkResult("State and City", state+" "+city);
     }
-
-
-
-
 }
